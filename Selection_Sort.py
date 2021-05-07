@@ -1,3 +1,4 @@
+from main import printStep
 """
 선택 정렬(selcetion_sort)
 : 리스트에서 가장 작은 숫자를 선택, 앞쪽으로 옮기는 방법
@@ -25,11 +26,6 @@ def selection_sort(a):  # 선택 정렬
         A[i], A[least] = A[least], A[i]  # 배열 간 최솟값 교환
         printSteop(A, i+i)
 
-
-def printSteop(arr, val):
-
-    print("  Step %2d = " % val, end='')
-    print(arr)
 
 
 if __name__ == '__main__':
